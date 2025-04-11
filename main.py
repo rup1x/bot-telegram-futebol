@@ -114,7 +114,7 @@ def analisar_jogos(jogos, filtros):
             print(f"Erro ao analisar jogo: {e}")
 
 if __name__ == "__main__":
-    filtros = carregar_filtros()
+    filtros = {}
 
     # Alerta de confirmação ao iniciar
     enviar_alerta("🚨 Teste de envio manual: o bot está vivo e enviando mensagens!")
