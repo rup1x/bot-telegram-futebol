@@ -16,10 +16,7 @@ def enviar_alerta(mensagem):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
     data = {"chat_id": CHAT_ID, "text": mensagem}
     requests.post(url, data=data)
-
-def carregar_filtros():
-    with open("filtros.json", "r") as f:
-        return json.load(f)
+    
 
 import requests
 
